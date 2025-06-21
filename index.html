@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrícula Online PUCPR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Matrícula Online PUCPR</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>1. Dados Pessoais e Escolha do Curso</h2>
+            <form id="matriculaForm">
+                <label>Nome Completo:
+                    <input type="text" id="nome" required>
+                </label>
+
+                <label>E-mail:
+                    <input type="email" id="email" required>
+                </label>
+
+                <label>Curso:
+                    <select id="curso" required>
+                        <option value="">Selecione</option>
+                        <option value="Engenharia de Software">Engenharia de Software</option>
+                        <option value="Direito">Direito</option>
+                        <option value="Medicina">Medicina</option>
+                        <option value="Psicologia">Psicologia</option>
+                    </select>
+                </label>
+
+                <h3>2. Pagamento</h3>
+                <label>Comprovante de Pagamento:
+                    <input type="file" id="pagamento" required>
+                </label>
+
+                <h3>3. Documentação</h3>
+                <label>Documentação (PDF):
+                    <input type="file" id="documentos" required>
+                </label>
+
+                <button type="submit">Enviar Matrícula</button>
+            </form>
+
+            <div id="status"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PUCPR - Matrícula Online</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
