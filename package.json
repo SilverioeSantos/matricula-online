@@ -1,0 +1,12 @@
+{
+  "name": "matricula-online",
+  "version": "1.0.0",
+  "description": "Site de matrícula online",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
